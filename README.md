@@ -7,17 +7,20 @@ we we have to predict that a person have cancer or not .....
 
   #   Our Aim
   
-Focus had been over the Recall score then Precision score  and then overall accuracy...
- I w preprocessed  this raw dataset and make trained model 
- by using 14 techniques like  Boosting techniques , bagging
+Focus had been over the Recall score then Precision score  and then overall accuracy... I preprocessed  this raw dataset and make trained model 
+by using 14 techniques like  Boosting techniques , bagging
 knnn , svm and so on .....
 
 #  accuracy of my model ...
 
 Boosting performed very well..
+
 catboost accuracy
+
 overall : 99.16 %
+
 recall :  100   %
+
 precision : 98.31
 
 
