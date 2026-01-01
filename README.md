@@ -1,4 +1,4 @@
-# Overview : 
+# Overview
 ________________________
 
 ## 🫁 Lung Cancer Prediction using Machine Learning 
