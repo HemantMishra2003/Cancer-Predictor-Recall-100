@@ -170,19 +170,19 @@ training any Machine Learning model.
 - Before training the models, detailed **EDA** was performed 
 - to understand feature relationships and medical relevance.
 
-### 🔹 Target Distribution Analysis
+### A🔹 Target Distribution Analysis
 
 - The target variable `LUNG_CANCER` showed a **strong class imbalance**,
 - with cancer-positive cases dominating.
 - This confirmed the need for imbalance
 -  handling techniques during preprocessing.
 
- ### 🔹 Correlation Analysis
+ ### B🔹 Correlation Analysis
 
 - A correlation matrix was generated to analyze the
 - relationship between input features and lung cancer.
  
- ### Features such as:
+ ### C. Features such as:
   
   - **ALLERGY**
   - **ALCOHOL CONSUMING**
@@ -195,14 +195,14 @@ training any Machine Learning model.
 - showed weaker correlation but were retained
 - due to their medical significance.
 
-### Heatmap Visualization
+### D. Heatmap Visualization
 
 - Correlation heatmaps were used to visually inspect
 - feature dependencies.Strong inter-feature 
 - relationships were identified, particularly between 
 - **ANXIETY** and **YELLOW FINGERS**.
 
-###  Feature Engineering
+### E. Feature Engineering
 
 - Based on correlation insights, a new interaction feature was created:
   
@@ -211,7 +211,7 @@ training any Machine Learning model.
 - This feature captures the combined effect of anxiety-related
 -  behavior and physical symptoms, enhancing model learning capability.
 
-#### 🔹 Medical Insight
+#### F.🔹 Medical Insight
 
 EDA confirmed that lung cancer risk is influenced by a. 
 **combination of symptoms rather than a single factor**.  
@@ -285,7 +285,7 @@ and real-world medical suitability**.
 
 ---
 
-### A🔹 Random Forest Classifier
+## A🔹 Random Forest Classifier
 
 - **Recall:    100%**
 - **Precision:  ~88%**
@@ -308,7 +308,7 @@ but excessive false alarms make it less ideal for final diagnosis.
 
 ---
 
-### 🔹 K-Nearest Neighbors (KNN)
+## 🔹 K-Nearest Neighbors (KNN)
 
 - **Accuracy: ~98%**
 - **Precision: 100%**
@@ -329,7 +329,7 @@ but is not preferred for deployment in critical medical systems.
 
 ---
 
-### 🔹 CatBoost Classifier (Final Model)
+## 🔹 CatBoost Classifier (Final Model)
 
 - **Accuracy: ~96–97%**
 - **Precision: ~96–97%**
