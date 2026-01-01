@@ -222,39 +222,49 @@ improving predictive performance.
  ## Models & Algorithms Used
  _________________________________
 
-To ensure robust and unbiased medical predictions, this project evaluates a **wide range of Machine Learning and Deep Learning algorithms**.  
-In total, **14 different models** were trained, tested, and compared using consistent evaluation metrics.
+## 🤖 Models, Algorithms & Performance Metrics
 
-### 🔹 Traditional Machine Learning Models
-- **Logistic Regression** – Baseline linear classifier for medical risk prediction  
-- **Decision Tree Classifier** – Interpretable tree-based model  
-- **K-Nearest Neighbors (KNN)** – Distance-based classifier  
-- **Support Vector Machine (SVM)** – Margin-based classifier  
-- **Bernoulli Naive Bayes** – Probabilistic model for binary features  
+To build a reliable medical prediction system, this project evaluates **14 Machine Learning and Deep Learning models**.  
+Each model was assessed using **medical-critical evaluation metrics**, with **Recall given the highest priority**.
 
-### 🔹 Ensemble & Boosting Models
-- **Random Forest Classifier** – Bagging-based ensemble of decision trees  
-- **AdaBoost Classifier** – Boosting technique focusing on hard-to-classify samples  
-- **Gradient Boosting Classifier** – Sequential boosting of weak learners  
-- **XGBoost Classifier** – Optimized gradient boosting framework  
-- **LightGBM Classifier** – High-performance gradient boosting model  
-- **CatBoost Classifier** – Advanced boosting model with strong regularization  
+### 🔬 Evaluation Metrics Used
+- **Accuracy** – Overall correctness of the model  
+- **Precision** – How many predicted cancer cases were actually cancer  
+- **Recall** – How many actual cancer cases were correctly detected (**most important**)  
+- **F1-Score** – Balance between Precision and Recall  
 
-### 🔹 Ensemble Combination Techniques
-- **Voting Classifier (Soft Voting)** – Combines predictions from multiple models  
-- **Stacking Classifier** – Meta-learning approach using base learners and a final estimator  
+---
 
-### 🔹 Deep Learning Model
-- **Artificial Neural Network (ANN)** – Multi-layer perceptron trained on scaled features  
+### 📊 Model-wise Performance Summary
 
-### 🔬 Model Selection Strategy
-- All models were evaluated using:
-  - **Recall**
-  - **Precision**
-  - **Accuracy**
-  - **F1-Score**
-  - **Confusion Matrix**
-- Since this is a **medical diagnosis problem**, **Recall was prioritized** to minimize false negatives.
+| Model | Accuracy (%) | Precision (%) | Recall (%) |
+|-----|-------------|---------------|------------|
+| Logistic Regression | ~96.6 | ~95.0 | ~98.0 |
+| Decision Tree | ~95.8 | ~94.9 | ~96.5 |
+| Random Forest | ~89.0 | ~88.0 | **100.0** |
+| XGBoost | ~95.0 | ~93.3 | ~96.5 |
+| KNN | ~98.3 | **100.0** | ~96.5 |
+| SVM | ~97.5 | ~98.2 | ~96.5 |
+| Bernoulli Naive Bayes | ~95.8 | ~94.9 | ~96.5 |
+| AdaBoost | ~95.8 | ~94.9 | ~96.5 |
+| Gradient Boosting | ~95.8 | ~94.9 | ~96.5 |
+| LightGBM | ~95.8 | ~94.9 | ~96.5 |
+| Voting Classifier | ~96.6 | ~96.5 | ~96.5 |
+| Stacking Classifier | ~97.5 | ~96.6 | ~98.2 |
+| Artificial Neural Network | ~95.8 | ~94.9 | ~96.5 |
+| **CatBoost (Final Model)** | **~96.7** | **~96.5** | **~96.5** |
+
+---
+
+### 🧠 Medical Interpretation
+- **Random Forest** achieved **100% Recall**, ensuring no cancer case was missed,  
+  but suffered from **lower Precision**, leading to more false positives.
+- **CatBoost** provided a **balanced trade-off**, maintaining **high Recall while significantly improving Precision**.
+- This balance is crucial in **real-world medical diagnosis**, where both missed cases and unnecessary alarms must be minimized.
+
+### ✅ Final Model Selection
+Based on consistent performance across **Recall, Precision, Accuracy, F1-score, and Confusion Matrix**,  
+**CatBoost was selected as the final model** for lung cancer prediction.
 
 After extensive comparison, **Boosting-based models demonstrated superior performance**, with **CatBoost** selected as the final model due to its **balanced Recall and Precision**, making it suitable for real-world medical applications.
 
