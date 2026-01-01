@@ -152,7 +152,7 @@ To ensure reliable and medically safe predictions, the raw dataset was carefully
          was clean, balanced, and numerically stable, 
          allowing fair and consistent evaluation across all models.
     
-     ##  Exploratory Data Analysis & Feature Engineering
+ ##  Exploratory Data Analysis & Feature Engineering
     ______________________________________________________________
 
 - Before training the models, detailed **EDA** was performed 
