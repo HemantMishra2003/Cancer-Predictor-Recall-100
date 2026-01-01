@@ -17,21 +17,22 @@ using patient symptoms and lifestyle factors.
 - Swallowing difficulty, fatigue, anxiety
 - Chronic disease and allergy indicators
 - and predicts a **binary outcome**:
+ 
 - `1 → Lung Cancer Detected`
 - `0 → No Lung Cancer`
 
-### 🎯 Project Objective
+###  Project Objective
 
 The primary goal of this project is to build a.
 **reliable and medically safe prediction system**. 
 by prioritizing **Recall score**, followed by Precision and overall Accuracy.
 
-> ⚠️ In medical diagnosis, a **False Negative**
+>  In medical diagnosis, a **False Negative**
 > (cancer present but not detected) can be fatal.  
 > Therefore, this project focuses on **maximizing Recall**
 > to ensure that cancer cases are not missed.
 
-### 🔬 Approach Summary
+###  Approach Summary
 - End-to-end ML pipeline from data preprocessing to model evaluation
 - Comparison of **14 Machine Learning & Deep Learning algorithms**
 - Special focus on **Boosting and Ensemble techniques**
