@@ -211,7 +211,7 @@ training any Machine Learning model.
 - This feature captures the combined effect of anxiety-related
 -  behavior and physical symptoms, enhancing model learning capability.
 
-####🔹 **Medical Insight**
+#### 🔹 **Medical Insight**
 
 EDA confirmed that lung cancer risk is influenced by a. 
 **combination of symptoms rather than a single factor**.  
@@ -224,7 +224,7 @@ improving predictive performance.
     medically meaningful, and 
     optimized features.
 
-## 🤖 Models, Algorithms & Performance Metrics
+##  Models, Algorithms & Performance Metrics
 __________________________________________________________
 
 To build a reliable medical prediction system.
