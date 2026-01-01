@@ -38,5 +38,61 @@ by prioritizing **Recall score**, followed by Precision and overall Accuracy.
 - Special focus on **Boosting and Ensemble techniques**
 - Final model selection based on **balanced medical performance**, not just accuracy
 
-This project demonstrates a **real-world healthcare application of Machine Learning**, combining technical rigor with domain-specific decision making.
+      This project demonstrates a **real-world healthcare 
+      application of Machine Learning**, combining technical
+      rigor with domain-specific decision making.
+  
+# 2.  Dataset Overview
+_____________________________
+
+This project uses a **medical survey–based lung cancer dataset** 
+containing patient health indicators, lifestyle habits,
+and clinical symptoms that are commonly
+associated with lung cancer risk.
+
+### 🔹 Dataset Size
+
+- Total samples (after cleaning):  **276**
+- Total features:                  **16**
+- Target variable:          **LUNG_CANCER**
+
+### 🔹 Input Features
+
+The dataset includes the following medical and lifestyle indicators:
+
+- AGE  
+- GENDER  
+- SMOKING  
+- ALCOHOL CONSUMING  
+- CHEST PAIN  
+- COUGHING  
+- WHEEZING  
+- SHORTNESS OF BREATH  
+- SWALLOWING DIFFICULTY  
+- FATIGUE  
+- ANXIETY  
+- ALLERGY  
+- YELLOW FINGERS  
+- PEER PRESSURE  
+- CHRONIC DISEASE  
+
+Each feature represents a **binary or numerical medical condition** contributing to lung cancer risk assessment.
+
+### 🔹 Target Variable
+
+- `LUNG_CANCER = 1` → Lung cancer detected  
+- `LUNG_CANCER = 0` → No lung cancer  
+
+##  Dataset Challenge
+______________________________
+
+The dataset is **highly imbalanced**, with lung cancer. 
+cases dominating the samples.  
+To address this issue and prevent biased learning,
+**ADASYN oversampling** was applied to balance.
+the dataset before model training.
+
+Balancing the dataset ensures that the models learn meaningful.
+medical patterns instead of favoring the majority class.
+
 
