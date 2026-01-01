@@ -39,8 +39,8 @@ by prioritizing **Recall score**, followed by Precision and overall Accuracy.
 - Special focus on **Boosting and Ensemble techniques**
 - Final model selection based on **balanced medical performance**, not just accuracy
 
-      This project demonstrates a **real-world healthcare 
-      application of Machine Learning**, combining technical
+      This project demonstrates a real-world healthcare 
+      application of Machine Learning, combining technical
       rigor with domain-specific decision making.
   
 # 2.  Dataset Overview
@@ -149,8 +149,66 @@ To ensure reliable and medically safe predictions, the raw dataset was carefully
   - Neural Networks
 
          These preprocessing steps ensured that the dataset
-         was **clean, balanced, and numerically stable**, 
+         was clean, balanced, and numerically stable, 
          allowing fair and consistent evaluation across all models.
+    
+     ##  Exploratory Data Analysis & Feature Engineering
+    ______________________________________________________________
+
+- Before training the models, detailed **EDA** was performed 
+- to understand feature relationships and medical relevance.
+
+### 🔹 Target Distribution Analysis
+
+- The target variable `LUNG_CANCER` showed a **strong class imbalance**,
+- with cancer-positive cases dominating.
+- This confirmed the need for imbalance
+-  handling techniques during preprocessing.
+
+ ### 🔹 Correlation Analysis
+
+- A correlation matrix was generated to analyze the
+- relationship between input features and lung cancer.
+ 
+ #### Features such as:
+  
+  - **ALLERGY**
+  - **ALCOHOL CONSUMING**
+  - **SWALLOWING DIFFICULTY**
+  - **COUGHING**
+  - **WHEEZING**
+  showed relatively higher correlation with lung cancer.
+
+- Features like **AGE**, **GENDER**, and **SHORTNESS OF BREATH**
+- showed weaker correlation but were retained
+- due to their medical significance.
+
+####  Heatmap Visualization
+
+- Correlation heatmaps were used to visually inspect feature dependencies.
+- Strong inter-feature relationships were identified,
+-  particularly between **ANXIETY** and **YELLOW FINGERS**.
+
+###  Feature Engineering
+
+- Based on correlation insights, a new interaction feature was created:
+  
+- `ANXI_YELLOW_FING = ANXIETY × YELLOW_FINGERS`
+    
+- This feature captures the combined effect of anxiety-related
+-  behavior and physical symptoms, enhancing model learning capability.
+
+#### 🔹 Medical Insight
+
+EDA confirmed that lung cancer risk is influenced by a. 
+**combination of symptoms rather than a single factor**.  
+Feature engineering helped the models learn **non-linear.
+and interaction-based medical patterns**.
+improving predictive performance.
+
+This step ensured that the models were trained on **informative, medically meaningful, and optimized features**.
+
+    
 
 
 
