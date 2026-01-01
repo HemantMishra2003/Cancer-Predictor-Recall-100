@@ -21,7 +21,7 @@ using patient symptoms and lifestyle factors.
 - `1 → Lung Cancer Detected`
 - `0 → No Lung Cancer`
 
-### A.  Project Objective
+### A .  Project Objective
 
 The primary goal of this project is to build a.
 **reliable and medically safe prediction system**. 
@@ -32,7 +32,7 @@ by prioritizing **Recall score**, followed by Precision and overall Accuracy.
 > Therefore, this project focuses on **maximizing Recall**
 > to ensure that cancer cases are not missed.
 
-### B.  Approach Summary
+### B .  Approach Summary
 
 - End-to-end ML pipeline from data preprocessing to model evaluation
 - Comparison of **14 Machine Learning & Deep Learning algorithms**
