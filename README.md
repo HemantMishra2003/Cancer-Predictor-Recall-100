@@ -96,4 +96,60 @@ the dataset before model training.
 Balancing the dataset ensures that the models learn meaningful.
 medical patterns instead of favoring the majority class.
 
+#  Data Preprocessing
+___________________________
+
+To ensure reliable and medically safe predictions, the raw dataset was carefully preprocessed before training any Machine Learning model.
+
+### 🔹 Data Cleaning
+
+- Duplicate records were identified and removed to avoid biased learning.
+- The final dataset was reduced from **309 to 276 samples** after duplicate removal.
+- No missing values were present in the dataset.
+
+### 🔹 Label Encoding
+
+- Binary features were encoded as:
+  
+  - `1 → Yes`
+  - `0 → No`
+    
+- Target variable `LUNG_CANCER` was converted to:
+ 
+  - `1` for cancer detected
+  - `0` for no cancer
+  - 
+- Gender was encoded as:
+ 
+  - `0 → Male`
+  - `1 → Female`
+
+### 🔹 Outlier Analysis
+
+- Age distribution was analyzed using boxplots.
+- A small number of high-age outliers were observed.
+- Since age is a **medically valid and realistic factor**,
+-  no outliers were removed.
+
+### 🔹 Class Imbalance Handling
+
+- The dataset was **highly imbalanced**, with cancer cases dominating.
+- To address this, **ADASYN (Adaptive Synthetic Sampling)** was applied.
+- This technique generates synthetic samples for the minority class,
+- helping models learn balanced decision boundaries.
+
+### 🔹 Feature Scaling
+
+- **StandardScaler** was applied to normalize feature values.
+- Scaling was essential for distance-based and gradient-based algorithms such as:
+  - Logistic Regression
+  - SVM
+  - KNN
+  - Neural Networks
+
+         These preprocessing steps ensured that the dataset
+         was **clean, balanced, and numerically stable**, 
+         allowing fair and consistent evaluation across all models.
+
+
 
