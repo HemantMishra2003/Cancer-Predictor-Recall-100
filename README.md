@@ -261,8 +261,11 @@ with **Recall given the highest priority**.
 - **F1-Score** – Balance between Precision and Recall. 
 
 ### Model-wise Performance Summary
+
 ![Accuracy Comparison of 14 Techniques](MyAssets/all14TechniqueAccuracy.png)
+
 ![Accuracy and Recall Comparison](MyAssets/all14TechniqueAccuracyWithRecall.png)
+
 ![Accuracy and Precision Comparison](MyAssets/all14TechniqueAccuracywithPrecision.png)
 
 | Model | Accuracy (%) | Precision (%) | Recall (%) |
