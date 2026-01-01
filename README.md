@@ -191,7 +191,7 @@ To ensure reliable and medically safe predictions, the raw dataset was carefully
 - showed weaker correlation but were retained
 - due to their medical significance.
 
-####  Heatmap Visualization
+### Heatmap Visualization
 
 - Correlation heatmaps were used to visually inspect
 - feature dependencies.Strong inter-feature 
