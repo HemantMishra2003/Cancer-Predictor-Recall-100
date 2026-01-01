@@ -5,7 +5,8 @@ ________________________
 Lung cancer is one of the most life-threatening diseases.
 Where early detection plays a critical role. 
 in improving patient survival rates.  
-This project presents a Machine Learning–based medical prediction system.
+This project presents a Machine Learning–based
+medical prediction system.
 designed to identify the likelihood of lung cancer.
 using patient symptoms and lifestyle factors.
 
