@@ -61,21 +61,21 @@ associated with lung cancer risk.
 
 The dataset includes the following medical and lifestyle indicators:
 
-- AGE  
-- GENDER  
-- SMOKING  
-- ALCOHOL CONSUMING  
-- CHEST PAIN  
-- COUGHING  
-- WHEEZING  
-- SHORTNESS OF BREATH  
-- SWALLOWING DIFFICULTY  
-- FATIGUE  
-- ANXIETY  
-- ALLERGY  
-- YELLOW FINGERS  
-- PEER PRESSURE  
-- CHRONIC DISEASE  
+- 1. AGE  
+- 2. GENDER  
+- 3. SMOKING  
+- 3. ALCOHOL CONSUMING  
+- 4. CHEST PAIN  
+- 5. COUGHING  
+- 6. WHEEZING  
+- 7. SHORTNESS OF BREATH  
+- 8. SWALLOWING DIFFICULTY  
+- 9. FATIGUE  
+- 9. ANXIETY  
+- 10. ALLERGY  
+- 11. YELLOW FINGERS  
+- 12. PEER PRESSURE  
+- 13. CHRONIC DISEASE  
 
 Each feature represents a **binary or numerical medical condition** contributing to lung cancer risk assessment.
 
@@ -84,7 +84,7 @@ Each feature represents a **binary or numerical medical condition** contributing
 - `LUNG_CANCER = 1` → Lung cancer detected  
 - `LUNG_CANCER = 0` → No lung cancer  
 
-##  Dataset Challenge
+##  DataSet Challenge
 ______________________________
 
 The dataset is **highly imbalanced**, with lung cancer. 
