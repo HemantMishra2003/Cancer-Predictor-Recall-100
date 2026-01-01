@@ -11,8 +11,8 @@ medical prediction system.
 designed to identify the likelihood of lung cancer.
 using patient symptoms and lifestyle factors.
 
-### This Model analyzes Multiple. 
-### Health indicators such as: 
+> This Model analyzes Multiple.
+> Health indicators such as: 
 
 - Smoking and alcohol consumption
 - Chest pain, wheezing, coughing
