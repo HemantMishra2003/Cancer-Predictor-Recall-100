@@ -39,9 +39,12 @@ by prioritizing **Recall score**, followed by Precision and overall Accuracy.
 - Special focus on **Boosting and Ensemble techniques**
 - Final model selection based on **balanced medical performance**, not just accuracy
 
-      This project demonstrates a real-world healthcare 
-      application of Machine Learning, combining technical
-      rigor with domain-specific decision making.
+      This project demonstrates
+      a real-world healthcare 
+      application of Machine 
+      Learning,combining technical
+      rigor with domain-specific
+      decision making.
   
 # 2.  Dataset Overview
 _____________________________
@@ -77,8 +80,10 @@ The dataset includes the following medical and lifestyle indicators:
 - 12. PEER PRESSURE  
 - 13. CHRONIC DISEASE  
 
-          Each feature represents a **binary or numerical medical condition**
-          contributing to lung cancer risk assessment.
+          Each feature represents a
+          binary or numerical medical
+          condition contributing to
+          lung cancer risk assessment.
 
 ### 🔹 Target Variable
 
@@ -148,9 +153,12 @@ To ensure reliable and medically safe predictions, the raw dataset was carefully
   - KNN
   - Neural Networks
 
-         These preprocessing steps ensured that the dataset
-         was clean, balanced, and numerically stable, 
-         allowing fair and consistent evaluation across all models.
+         These preprocessing steps
+         ensured that the dataset
+         was clean, balanced, and
+         numerically stable, 
+         allowing fair and consistent
+         evaluation across all models.
     
  ##  Exploratory Data Analysis & Feature Engineering
  ______________________________________________________________
@@ -206,8 +214,10 @@ Feature engineering helped the models learn **non-linear.
 and interaction-based medical patterns**.
 improving predictive performance.
 
-    This step ensured that the models were trained on informative, 
-    medically meaningful, and optimized features.
+    This step ensured that the 
+    models  were trained on informative, 
+    medically meaningful, and 
+    optimized features.
 
  ## Models & Algorithms Used
  _________________________________
