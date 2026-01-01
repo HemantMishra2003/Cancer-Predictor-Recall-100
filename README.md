@@ -49,20 +49,23 @@ by prioritizing **Recall score**, followed by Precision and overall Accuracy.
 # 2. Dataset Overview
 _____________________________
 
-This project uses a **medical survey–based lung cancer dataset** 
-containing patient health indicators, lifestyle habits,
-and clinical symptoms that are commonly
-associated with lung cancer risk.
+    This project uses a medical survey–based
+    lung cancer dataset containing patient
+    health indicators, lifestyle habits,
+    and clinical symptoms that are commonly
+    associated with lung cancer risk.
 
-### 🔹 Dataset Size
+## 🔹 Dataset Size
 
 - Total samples (after cleaning):  **276**
 - Total features:                  **16**
 - Target variable:          **LUNG_CANCER**
 
-### 🔹 Input Features
-The dataset includes the following.
-medical and lifestyle indicators:
+
+## 🔹 Input Features
+
+> The dataset includes the following.
+> medical and lifestyle indicators:
 
 - 1. AGE  
 - 2. GENDER  
@@ -90,17 +93,24 @@ medical and lifestyle indicators:
 - `LUNG_CANCER = 1` → Lung cancer detected  
 - `LUNG_CANCER = 0` → No lung cancer  
 
+
+
 ##  DataSet Challenge
 ______________________________
 
-The dataset is **highly imbalanced**, with lung cancer. 
-cases dominating the samples.  
-To address this issue and prevent biased learning,
-**ADASYN oversampling** was applied to balance.
-the dataset before model training.
+    The dataset is highly imbalanced,
+    with lung cancer. cases dominating 
+    the samples.To address this issue
+    and prevent biased learning,
+    ADASYN oversampling was applied 
+    to balance.the dataset 
+    before model training.
 
-Balancing the dataset ensures that the models learn meaningful.
-medical patterns instead of favoring the majority class.
+- Balancing the dataset ensures that
+- the models learn meaningful.
+- medical patterns instead of
+- favoring the majority class.
+
 
 #  Data Preprocessing
 ___________________________
@@ -109,11 +119,15 @@ To ensure reliable and medically safe predictions.
 the raw dataset was carefully preprocessed before.
 training any Machine Learning model.
 
+
 ### A 🔹 Data Cleaning
 
-- Duplicate records were identified and removed to avoid biased learning.
-- The final dataset was reduced from **309 to 276 samples** after duplicate removal.
+- Duplicate records were identified and
+-  removed to avoid biased learning.
+- The final dataset was reduced from
+- **309 to 276 samples** after duplicate removal.
 - No missing values were present in the dataset.
+
 
 ### B 🔹 Label Encoding
 
@@ -211,11 +225,11 @@ training any Machine Learning model.
 
 #### 🔹 **Medical Insight**
 
-EDA confirmed that lung cancer risk is influenced by a. 
-**combination of symptoms rather than a single factor**.  
-Feature engineering helped the models learn **non-linear.
-and interaction-based medical patterns**.
-improving predictive performance.
+- EDA confirmed that lung cancer risk is influenced by a. 
+- **combination of symptoms rather than a single factor**.  
+- Feature engineering helped the models learn **non-linear.
+- and interaction-based medical patterns**.
+- improving predictive performance.
 
     This step ensured that the 
     models  were trained on informative, 
@@ -344,13 +358,13 @@ but is not preferred for deployment in critical medical systems.
 > making it the best choice for final lung cancer prediction.
 
 ###  Final Decision
-___________________________________________
+___________________________________________ 
 
-Although Random Forest achieved perfect Recall (100).
-and KNN achieved very high Accuracy and Precision, but. 
-**CatBoost was selected as the final model** due to. 
-its **balanced performance, stability, and.
-real-world medical reliability**.
+> - Although Random Forest achieved perfect Recall (100).
+> - and KNN achieved very high Accuracy and Precision, but. 
+> - **CatBoost was selected as the final model** due to. 
+> - its **balanced performance, stability, and.
+>-  real-world medical reliability**.
 
 > In medical diagnosis, a slightly lower Recall is
 > acceptable if it significantly reduces false alarms,  
