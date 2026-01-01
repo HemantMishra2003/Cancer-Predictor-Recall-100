@@ -1,22 +1,22 @@
 # 1. Project Overview
 ___________________________
 
-##  🫁 Lung Cancer Prediction using Machine Learning 
+## 🫁 Lung Cancer Prediction using Machine Learning 
 
 Lung cancer is one of the most **life-threatening diseases**.
-where **early detection** plays a critical role. 
+Where **early detection** plays a critical role. 
 in improving patient survival rates.  
 This project presents a **Machine Learning–based medical prediction system**.
 designed to identify the likelihood of lung cancer.
 using patient symptoms and lifestyle factors.
 
-The model analyzes multiple health indicators such as:
+**The model analyzes multiple health indicators such as:**
+
 - Smoking and alcohol consumption
 - Chest pain, wheezing, coughing
 - Swallowing difficulty, fatigue, anxiety
 - Chronic disease and allergy indicators
-
-and predicts a **binary outcome**:
+- and predicts a **binary outcome**:
 - `1 → Lung Cancer Detected`
 - `0 → No Lung Cancer`
 
