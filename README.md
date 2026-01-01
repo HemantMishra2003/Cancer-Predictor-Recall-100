@@ -97,6 +97,8 @@ _____________________________
 
 ##  DataSet Challenge
 ______________________________
+![Lung Cancer Distribution](MyAssets/LungCancerDistribution.jpeg)
+
 
     The dataset is highly imbalanced,
     with lung cancer. cases dominating 
