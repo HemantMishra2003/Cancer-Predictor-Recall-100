@@ -1,3 +1,7 @@
+![Model Comparison](MyAssets/ModelComparison.jpeg)
+
+
+
 ## 🫁 Lung Cancer Prediction Using Machine Learning 
 _________________________________________________________________
 
