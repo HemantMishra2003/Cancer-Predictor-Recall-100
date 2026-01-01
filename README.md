@@ -1,7 +1,5 @@
-# Overview
-________________________
-
 ## 🫁 Lung Cancer Prediction Using Machine Learning 
+_________________________________________________________________
 
 Lung cancer is one of the most life-threatening diseases.
 Where early detection plays a critical role. 
