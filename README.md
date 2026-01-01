@@ -11,7 +11,7 @@ designed to identify the likelihood of lung cancer.
 using patient symptoms and lifestyle factors.
 
 ### This Model analyzes Multiple. 
-### health indicators such as: 
+### Health indicators such as: 
 
 - Smoking and alcohol consumption
 - Chest pain, wheezing, coughing
@@ -22,7 +22,7 @@ using patient symptoms and lifestyle factors.
 - `1 → Lung Cancer Detected`
 - `0 → No Lung Cancer`
 
-## A. Project Objective
+## A. Project Objective : 
 
 The primary goal of this project is to build a.
 **reliable and medically safe prediction system**. 
@@ -33,7 +33,7 @@ by prioritizing **Recall score**, followed by Precision and overall Accuracy.
 > Therefore, this project focuses on **maximizing Recall**
 > to ensure that cancer cases are not missed.
 
-## B .  Approach Summary
+## B . Approach Summary : 
 
 - End-to-end ML pipeline from data preprocessing to model evaluation
 - Comparison of **14 Machine Learning & Deep Learning algorithms**
@@ -47,7 +47,7 @@ by prioritizing **Recall score**, followed by Precision and overall Accuracy.
       rigor with domain-specific
       decision making.
   
-# 2.  Dataset Overview
+# 2. Dataset Overview
 _____________________________
 
 This project uses a **medical survey–based lung cancer dataset** 
@@ -110,13 +110,13 @@ To ensure reliable and medically safe predictions.
 the raw dataset was carefully preprocessed before.
 training any Machine Learning model.
 
-### 🔹 Data Cleaning
+### A 🔹 Data Cleaning
 
 - Duplicate records were identified and removed to avoid biased learning.
 - The final dataset was reduced from **309 to 276 samples** after duplicate removal.
 - No missing values were present in the dataset.
 
-### 🔹 Label Encoding
+### B 🔹 Label Encoding
 
 - Binary features were encoded as:
   
@@ -133,21 +133,21 @@ training any Machine Learning model.
   - `0 → Male`
   - `1 → Female`
 
-### 🔹 Outlier Analysis
+### C 🔹 Outlier Analysis
 
 - Age distribution was analyzed using boxplots.
 - A small number of high-age outliers were observed.
 - Since age is a **medically valid and realistic factor**,
 - no outliers were removed.
 
-### 🔹 Class Imbalance Handling
+### D 🔹 Class Imbalance Handling
 
 - The dataset was **highly imbalanced**, with cancer cases dominating.
 - To address this, **ADASYN (Adaptive Synthetic Sampling)** was applied.
 - This technique generates synthetic samples for the minority class,
 - helping models learn balanced decision boundaries.
 
-### 🔹 Feature Scaling
+### E🔹 Feature Scaling
 
 - **StandardScaler** was applied to normalize feature values.
 - Scaling was essential for distance-based and gradient-based algorithms such as:
