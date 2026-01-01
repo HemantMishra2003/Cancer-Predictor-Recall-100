@@ -149,6 +149,7 @@ training any Machine Learning model.
   - `1 → Female`
 
 ### C 🔹 Outlier Analysis
+![Outliers of Lung Cancer](MyAssets/outliersoflungs.jpeg)
 
 - Age distribution was analyzed using boxplots.
 - A small number of high-age outliers were observed.
