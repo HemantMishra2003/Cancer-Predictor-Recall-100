@@ -193,9 +193,10 @@ To ensure reliable and medically safe predictions, the raw dataset was carefully
 
 ####  Heatmap Visualization
 
-- Correlation heatmaps were used to visually inspect feature dependencies.
-- Strong inter-feature relationships were identified,
--  particularly between **ANXIETY** and **YELLOW FINGERS**.
+- Correlation heatmaps were used to visually inspect
+- feature dependencies.Strong inter-feature 
+- relationships were identified, particularly between 
+- **ANXIETY** and **YELLOW FINGERS**.
 
 ###  Feature Engineering
 
@@ -224,18 +225,20 @@ improving predictive performance.
 
 ## 🤖 Models, Algorithms & Performance Metrics
 
-To build a reliable medical prediction system, this project evaluates **14 Machine Learning and Deep Learning models**.  
-Each model was assessed using **medical-critical evaluation metrics**, with **Recall given the highest priority**.
+To build a reliable medical prediction system.
+this project evaluates **14 Machine Learning and Deep Learning models**.  
+Each model was assessed using **medical-critical evaluation metrics**,. 
+with **Recall given the highest priority**.
 
 ### 🔬 Evaluation Metrics Used
+
 - **Accuracy** – Overall correctness of the model  
 - **Precision** – How many predicted cancer cases were actually cancer  
-- **Recall** – How many actual cancer cases were correctly detected (**most important**)  
-- **F1-Score** – Balance between Precision and Recall  
+- **Recall** – How many actual cancer cases were correctly
+-  detected (**most important**).  
+- **F1-Score** – Balance between Precision and Recall. 
 
----
-
-### 📊 Model-wise Performance Summary
+### Model-wise Performance Summary
 
 | Model | Accuracy (%) | Precision (%) | Recall (%) |
 |-----|-------------|---------------|------------|
@@ -258,51 +261,65 @@ Each model was assessed using **medical-critical evaluation metrics**, with **Re
 
 ### 🧠 Medical Interpretation
 
-- **Random Forest** achieved **100% Recall**, ensuring no cancer case was missed,  
-  but suffered from **lower Precision**, leading to more false positives.
-- **CatBoost** provided a **balanced trade-off**, maintaining **high Recall while significantly improving Precision**.
-- This balance is crucial in **real-world medical diagnosis**, where both missed cases and unnecessary alarms must be minimized.
+- **Random Forest** achieved **100% Recall**, ensuring.
+-  no cancer case was missed , but suffered from.
+-  **lower Precision** leading to more false positives.
+- **CatBoost** provided a **balanced trade-off**,.
+-  maintaining **high Recall while significantly improving Precision**.
+-  This balance is crucial in **real-world medical diagnosis**,.
+-  where both missed cases and  unnecessary alarms must be minimized.
 
-### ✅ Final Model Selection
 ## 🏆 Final Model Selection
+_______________________________________________________
 
-Multiple high-performing models were obtained during experimentation.  
-The final model was selected after carefully analyzing **Recall, Precision, Accuracy, stability, and real-world medical suitability**.
+Multiple high-performing models were obtained
+during experimentation.The final model was selected after
+carefully analyzing **Recall, Precision, Accuracy, stability,
+and real-world medical suitability**.
 
-Below is a clear justification for the final decision:
+#### Below is a clear justification for the final decision:
 
 ---
 
-### 🔹 Random Forest Classifier
-- **Recall: 100%**
-- **Precision: ~88%**
+### A🔹 Random Forest Classifier
 
-✔ Strength:
+- **Recall:    100%**
+- **Precision:  ~88%**
+
+ **Strength:**
+ 
 - Did not miss any lung cancer case (False Negatives = 0)
 
-❌ Limitation:
-- Lower precision resulted in a higher number of **false positives**
-- Over-sensitive behavior due to **small dataset and ADASYN oversampling**
+ **Limitation:**
+ 
+- Lower precision resulted in a higher
+- number of **false positives**
+- Over-sensitive behavior due to
+- **small dataset and ADASYN oversampling**
 
-📌 Interpretation:
+**Interpretation:**
+
 Random Forest is highly suitable for **initial medical screening**,  
 but excessive false alarms make it less ideal for final diagnosis.
 
 ---
 
 ### 🔹 K-Nearest Neighbors (KNN)
+
 - **Accuracy: ~98%**
 - **Precision: 100%**
 - **Recall: ~96%**
 
-✔ Strength:
+ **Strength:**
 - Very high accuracy and perfect precision on the test split
 
-❌ Limitation:
+**Limitation:**
+
 - Distance-based algorithm, sensitive to data distribution
 - Scalability and stability issues on unseen or large real-world medical data
 
-📌 Interpretation:
+**Interpretation:**
+
 KNN performs very well as a **baseline and comparison model**,  
 but is not preferred for deployment in critical medical systems.
 
@@ -315,17 +332,19 @@ but is not preferred for deployment in critical medical systems.
 - **Recall: ~96–97%**
 - **F1-Score: ~96–97%**
 
-✔ Strength:
+ **Strength:**
 - Balanced trade-off between **Recall and Precision**
 - Strong regularization and robustness on tabular medical data
 - Reduced false positives while maintaining high cancer detection rate
 - More stable and generalizable for real-world healthcare applications
 
-📌 Interpretation:
+📌 **Interpretation:**
+
 CatBoost provides the **most reliable and medically safe performance**,  
 making it the best choice for final lung cancer prediction.
 
-### ✅ Final Decision
+###  Final Decision
+___________________________________________
 
 Although Random Forest achieved perfect Recall (100).
 and KNN achieved very high Accuracy and Precision, but. 
@@ -334,7 +353,7 @@ its **balanced performance, stability, and.
 real-world medical reliability**.
 
 > In medical diagnosis, a slightly lower Recall is
->  acceptable if it significantly reduces false alarms,  
+> acceptable if it significantly reduces false alarms,  
 > provided that cancer detection remains consistently high.
 
 
