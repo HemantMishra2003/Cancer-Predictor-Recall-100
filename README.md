@@ -21,10 +21,15 @@ using patient symptoms and lifestyle factors.
 - `0 → No Lung Cancer`
 
 ### 🎯 Project Objective
-The primary goal of this project is to build a **reliable and medically safe prediction system** by prioritizing **Recall score**, followed by Precision and overall Accuracy.
 
-> ⚠️ In medical diagnosis, a **False Negative** (cancer present but not detected) can be fatal.  
-> Therefore, this project focuses on **maximizing Recall** to ensure that cancer cases are not missed.
+The primary goal of this project is to build a.
+**reliable and medically safe prediction system**. 
+by prioritizing **Recall score**, followed by Precision and overall Accuracy.
+
+> ⚠️ In medical diagnosis, a **False Negative**
+> (cancer present but not detected) can be fatal.  
+> Therefore, this project focuses on **maximizing Recall**
+> to ensure that cancer cases are not missed.
 
 ### 🔬 Approach Summary
 - End-to-end ML pipeline from data preprocessing to model evaluation
