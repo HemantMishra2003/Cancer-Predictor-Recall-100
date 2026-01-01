@@ -1,6 +1,5 @@
-## 1. Project Overview :
-_______________________________
-
+# Overview : 
+________________________
 ## 🫁 Lung Cancer Prediction using Machine Learning 
 
 Lung cancer is one of the most life-threatening diseases.
