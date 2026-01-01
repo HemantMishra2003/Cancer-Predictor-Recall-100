@@ -10,7 +10,7 @@ This project presents a **Machine Learning–based medical prediction system**.
 designed to identify the likelihood of lung cancer.
 using patient symptoms and lifestyle factors.
 
-**The model analyzes multiple health indicators such as:**
+### The model analyzes multiple health indicators such as
 
 - Smoking and alcohol consumption
 - Chest pain, wheezing, coughing
