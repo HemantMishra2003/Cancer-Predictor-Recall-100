@@ -257,16 +257,86 @@ Each model was assessed using **medical-critical evaluation metrics**, with **Re
 ---
 
 ### 🧠 Medical Interpretation
+
 - **Random Forest** achieved **100% Recall**, ensuring no cancer case was missed,  
   but suffered from **lower Precision**, leading to more false positives.
 - **CatBoost** provided a **balanced trade-off**, maintaining **high Recall while significantly improving Precision**.
 - This balance is crucial in **real-world medical diagnosis**, where both missed cases and unnecessary alarms must be minimized.
 
 ### ✅ Final Model Selection
-Based on consistent performance across **Recall, Precision, Accuracy, F1-score, and Confusion Matrix**,  
-**CatBoost was selected as the final model** for lung cancer prediction.
+## 🏆 Final Model Selection
 
-After extensive comparison, **Boosting-based models demonstrated superior performance**, with **CatBoost** selected as the final model due to its **balanced Recall and Precision**, making it suitable for real-world medical applications.
+Multiple high-performing models were obtained during experimentation.  
+The final model was selected after carefully analyzing **Recall, Precision, Accuracy, stability, and real-world medical suitability**.
+
+Below is a clear justification for the final decision:
+
+---
+
+### 🔹 Random Forest Classifier
+- **Recall: 100%**
+- **Precision: ~88%**
+
+✔ Strength:
+- Did not miss any lung cancer case (False Negatives = 0)
+
+❌ Limitation:
+- Lower precision resulted in a higher number of **false positives**
+- Over-sensitive behavior due to **small dataset and ADASYN oversampling**
+
+📌 Interpretation:
+Random Forest is highly suitable for **initial medical screening**,  
+but excessive false alarms make it less ideal for final diagnosis.
+
+---
+
+### 🔹 K-Nearest Neighbors (KNN)
+- **Accuracy: ~98%**
+- **Precision: 100%**
+- **Recall: ~96%**
+
+✔ Strength:
+- Very high accuracy and perfect precision on the test split
+
+❌ Limitation:
+- Distance-based algorithm, sensitive to data distribution
+- Scalability and stability issues on unseen or large real-world medical data
+
+📌 Interpretation:
+KNN performs very well as a **baseline and comparison model**,  
+but is not preferred for deployment in critical medical systems.
+
+---
+
+### 🔹 CatBoost Classifier (Final Model)
+
+- **Accuracy: ~96–97%**
+- **Precision: ~96–97%**
+- **Recall: ~96–97%**
+- **F1-Score: ~96–97%**
+
+✔ Strength:
+- Balanced trade-off between **Recall and Precision**
+- Strong regularization and robustness on tabular medical data
+- Reduced false positives while maintaining high cancer detection rate
+- More stable and generalizable for real-world healthcare applications
+
+📌 Interpretation:
+CatBoost provides the **most reliable and medically safe performance**,  
+making it the best choice for final lung cancer prediction.
+
+### ✅ Final Decision
+
+Although Random Forest achieved perfect Recall (100).
+and KNN achieved very high Accuracy and Precision, but. 
+**CatBoost was selected as the final model** due to. 
+its **balanced performance, stability, and.
+real-world medical reliability**.
+
+> In medical diagnosis, a slightly lower Recall is
+>  acceptable if it significantly reduces false alarms,  
+> provided that cancer detection remains consistently high.
+
 
 
     
