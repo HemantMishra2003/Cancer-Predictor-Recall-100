@@ -77,7 +77,8 @@ The dataset includes the following medical and lifestyle indicators:
 - 12. PEER PRESSURE  
 - 13. CHRONIC DISEASE  
 
-Each feature represents a **binary or numerical medical condition** contributing to lung cancer risk assessment.
+          Each feature represents a **binary or numerical medical condition**
+          contributing to lung cancer risk assessment.
 
 ### 🔹 Target Variable
 
