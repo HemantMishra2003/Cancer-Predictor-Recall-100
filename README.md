@@ -1,6 +1,5 @@
 ## Project Overview
 ___________________________
-
 - ### 1 🫁 Lung Cancer Prediction using Machine Learning
 
 Lung cancer is one of the most **life-threatening diseases**, where **early detection** plays a critical role in improving patient survival rates.  
