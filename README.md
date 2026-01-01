@@ -193,9 +193,12 @@ training any Machine Learning model.
 -  handling techniques during preprocessing.
 
  ### B🔹 Correlation Analysis
+![Lung Cancer Correlation](MyAssets/LUng-Correlation.jpeg)
+
 
 - A correlation matrix was generated to analyze the
 - relationship between input features and lung cancer.
+  
  
  ### C. Features such as:
   
@@ -211,6 +214,8 @@ training any Machine Learning model.
 - due to their medical significance.
 
 ### D. Heatmap Visualization
+![Lung Cancer Heatmap](MyAssets/LungHeatmap.jpeg)
+
 
 - Correlation heatmaps were used to visually inspect
 - feature dependencies.Strong inter-feature 
@@ -256,6 +261,9 @@ with **Recall given the highest priority**.
 - **F1-Score** – Balance between Precision and Recall. 
 
 ### Model-wise Performance Summary
+![Accuracy Comparison of 14 Techniques](MyAssets/all14TechniqueAccuracy.png)
+![Accuracy and Recall Comparison](MyAssets/all14TechniqueAccuracyWithRecall.png)
+![Accuracy and Precision Comparison](MyAssets/all14TechniqueAccuracywithPrecision.png)
 
 | Model | Accuracy (%) | Precision (%) | Recall (%) |
 |-----|-------------|---------------|------------|
@@ -278,6 +286,10 @@ with **Recall given the highest priority**.
 
 ### 🧠 Medical Interpretation
 
+![Random Forest Confusion Matrix](MyAssets/RandomForestConfusionMatrix.png)
+![ROC Curve – Random Forest](MyAssets/rocRandom.png)
+
+
 - **Random Forest** achieved **100% Recall**, ensuring.
 -  no cancer case was missed , but suffered from.
 -  **lower Precision** leading to more false positives.
@@ -288,6 +300,8 @@ with **Recall given the highest priority**.
 
 ## 🏆 Final Model Selection
 _______________________________________________________
+![Model Comparison](MyAssets/ModelComparison.jpeg)
+
 
 Multiple high-performing models were obtained
 during experimentation.The final model was selected after
