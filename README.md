@@ -10,7 +10,7 @@ This project presents a Machine Learning–based medical prediction system.
 designed to identify the likelihood of lung cancer.
 using patient symptoms and lifestyle factors.
 
-### The model analyzes multiple health indicators such as
+### This Model analyzes multiple health indicators such as
 
 - Smoking and alcohol consumption
 - Chest pain, wheezing, coughing
@@ -21,7 +21,7 @@ using patient symptoms and lifestyle factors.
 - `1 → Lung Cancer Detected`
 - `0 → No Lung Cancer`
 
-### A .  Project Objective
+### A. Project Objective
 
 The primary goal of this project is to build a.
 **reliable and medically safe prediction system**. 
@@ -61,8 +61,8 @@ associated with lung cancer risk.
 - Target variable:          **LUNG_CANCER**
 
 ### 🔹 Input Features
-
-The dataset includes the following medical and lifestyle indicators:
+The dataset includes the following.
+medical and lifestyle indicators:
 
 - 1. AGE  
 - 2. GENDER  
@@ -105,7 +105,9 @@ medical patterns instead of favoring the majority class.
 #  Data Preprocessing
 ___________________________
 
-To ensure reliable and medically safe predictions, the raw dataset was carefully preprocessed before training any Machine Learning model.
+To ensure reliable and medically safe predictions.
+the raw dataset was carefully preprocessed before.
+training any Machine Learning model.
 
 ### 🔹 Data Cleaning
 
@@ -135,7 +137,7 @@ To ensure reliable and medically safe predictions, the raw dataset was carefully
 - Age distribution was analyzed using boxplots.
 - A small number of high-age outliers were observed.
 - Since age is a **medically valid and realistic factor**,
--  no outliers were removed.
+- no outliers were removed.
 
 ### 🔹 Class Imbalance Handling
 
@@ -178,7 +180,7 @@ To ensure reliable and medically safe predictions, the raw dataset was carefully
 - A correlation matrix was generated to analyze the
 - relationship between input features and lung cancer.
  
- #### Features such as:
+ ### Features such as:
   
   - **ALLERGY**
   - **ALCOHOL CONSUMING**
