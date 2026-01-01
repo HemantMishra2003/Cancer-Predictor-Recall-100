@@ -342,8 +342,8 @@ but is not preferred for deployment in critical medical systems.
 
 📌 **Interpretation:**
 
-CatBoost provides the **most reliable and medically safe performance**,  
-making it the best choice for final lung cancer prediction.
+> CatBoost provides the **most reliable and medically safe performance**/  
+> making it the best choice for final lung cancer prediction.
 
 ###  Final Decision
 ___________________________________________
