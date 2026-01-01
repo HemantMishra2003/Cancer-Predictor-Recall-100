@@ -153,7 +153,7 @@ To ensure reliable and medically safe predictions, the raw dataset was carefully
          allowing fair and consistent evaluation across all models.
     
  ##  Exploratory Data Analysis & Feature Engineering
-    ______________________________________________________________
+ ______________________________________________________________
 
 - Before training the models, detailed **EDA** was performed 
 - to understand feature relationships and medical relevance.
@@ -206,7 +206,48 @@ Feature engineering helped the models learn **non-linear.
 and interaction-based medical patterns**.
 improving predictive performance.
 
-This step ensured that the models were trained on **informative, medically meaningful, and optimized features**.
+    This step ensured that the models were trained on informative, 
+    medically meaningful, and optimized features.
+
+ ## Models & Algorithms Used
+ _________________________________
+
+To ensure robust and unbiased medical predictions, this project evaluates a **wide range of Machine Learning and Deep Learning algorithms**.  
+In total, **14 different models** were trained, tested, and compared using consistent evaluation metrics.
+
+### 🔹 Traditional Machine Learning Models
+- **Logistic Regression** – Baseline linear classifier for medical risk prediction  
+- **Decision Tree Classifier** – Interpretable tree-based model  
+- **K-Nearest Neighbors (KNN)** – Distance-based classifier  
+- **Support Vector Machine (SVM)** – Margin-based classifier  
+- **Bernoulli Naive Bayes** – Probabilistic model for binary features  
+
+### 🔹 Ensemble & Boosting Models
+- **Random Forest Classifier** – Bagging-based ensemble of decision trees  
+- **AdaBoost Classifier** – Boosting technique focusing on hard-to-classify samples  
+- **Gradient Boosting Classifier** – Sequential boosting of weak learners  
+- **XGBoost Classifier** – Optimized gradient boosting framework  
+- **LightGBM Classifier** – High-performance gradient boosting model  
+- **CatBoost Classifier** – Advanced boosting model with strong regularization  
+
+### 🔹 Ensemble Combination Techniques
+- **Voting Classifier (Soft Voting)** – Combines predictions from multiple models  
+- **Stacking Classifier** – Meta-learning approach using base learners and a final estimator  
+
+### 🔹 Deep Learning Model
+- **Artificial Neural Network (ANN)** – Multi-layer perceptron trained on scaled features  
+
+### 🔬 Model Selection Strategy
+- All models were evaluated using:
+  - **Recall**
+  - **Precision**
+  - **Accuracy**
+  - **F1-Score**
+  - **Confusion Matrix**
+- Since this is a **medical diagnosis problem**, **Recall was prioritized** to minimize false negatives.
+
+After extensive comparison, **Boosting-based models demonstrated superior performance**, with **CatBoost** selected as the final model due to its **balanced Recall and Precision**, making it suitable for real-world medical applications.
+
 
     
 
